@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamados</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+		<script type="text/javascript">
+			jQuery(window).load(function($){
+				atualizaRelogio();
+			});
+		</script>
+</head>
+<body>
+    <div id="main-container">
+        <div>
+			<output id="data" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output>
+		</div>
+		<div class="relogio">
+			<output id="hora" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output>				
+		</div>
+        <h1>Dados da ligação</h1>
+        <form id="register-form">
+            <div class="half-box spacing">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite o nome do cliente">
+            </div>
+            <div class="half-box spacing">
+                <label for="company">Empresa</label>
+                <input type="text" name="company" id="company" placeholder="Digite a razão social">
+            </div>
+            <div class="half-box spacing">
+                <label for="acess">Acesso</label>
+                <input type="number" name="acess" id="acess" placeholder="Digite o acesso">
+            </div>
+            <div class="half-box spacing">
+                <label for="telefone">Telefone</label>
+                <input type="number" name="telefone" id="telefone" placeholder="Digite o telefone">
+            </div>
+            <div class="half-box spacing">
+                <label for="problem">Problema</label>
+                <input type="text" name="problem" id="problem" placeholder="Digite o problema">
+            </div>
+            <div class="half-box spacing">
+                <label for="solution">Qual foi a solução?</label>
+                <input type="text" name="solution" id="solution" placeholder="Digita a solução do problema">
+            </div>
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="Registrar">
+            </div>
+            <div id="overlay" class="overlay">
+                <div class="conteudo-registro">
+                  <h2>Campos Registrados:</h2>
+                  <div id="saida"></div>
+                  <button onclick="copiar()" class="copiar spacing">Copiar</button>
+                  <button onclick="fecharRegistro()" class="fecharRegistro spacing">Fechar</button>
+                </div>
+            <div id="assinatura">
+                <p>Esse site foi desenvolvido por <a href="https://github.com/lastergates/Projeto_validacao_senha" target="_blank">Marcos Davi</a> &copy; 2023</p>
+            </div>
+        </form>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
