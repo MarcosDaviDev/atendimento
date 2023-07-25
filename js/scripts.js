@@ -81,6 +81,6 @@ document.getElementById('register-form').addEventListener('submit', function (ev
   }
   
   function formatarDados(dados) {
-    return `Nome: ${dados.nome} - Empresa: ${dados.company}\nAcesso: ${dados.acess}\nProblema: ${dados.problem}\nSolução: ${dados.solution}`;
+    return `Nome: ${dados.nome} - Empresa: ${dados.company}\nAcesso: ${dados.acess}\nTelefone: ${dados.telefone}\nProblema: ${dados.problem}\nSolução: ${dados.solution}`;
   }
   
