@@ -78,9 +78,12 @@ document.getElementById('register-form').addEventListener('submit', function (ev
   function fecharRegistro() {
     const overlay = document.getElementById('overlay');
     overlay.style.display = 'none';
+
+    //Reinicia a página
+    window.location.reload()
   }
   
   function formatarDados(dados) {
-    return `Nome: ${dados.nome} - Empresa: ${dados.company}\nAcesso: ${dados.acess}\nTelefone: ${dados.telefone}\nProblema: ${dados.problem}\nSolução: ${dados.solution}`;
+    return `Nome: ${dados.nome} - Empresa: ${dados.company}\nAcesso: ${dados.acess}\nProblema: ${dados.problem}\nSolução: ${dados.solution}`;
   }
   
