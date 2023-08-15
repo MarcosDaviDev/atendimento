@@ -20,7 +20,7 @@
   body {
     padding-top: 5vh;
     background-position-y: -150px;
-    background-color: rgb(33, 33, 216);
+    background-color: rgb(4, 10, 3);
   }
   
   /* form */
@@ -30,7 +30,7 @@
     margin-right: auto;
     border-radius: 20px;
     padding: 25px;
-    background-color: #FFF;
+    background-color: #52d307;
   }
   
   #main-container h1 {
@@ -73,12 +73,12 @@
   }
   
   input:focus {
-    border-color: #E60084;
+    border-color: #020502;
   }
   
   input[type="submit"] {
-    background-color: #E60084;
-    color: #FFF;
+    background-color: #000000;
+    color: #f3f1f1;
     border: none;
     border-radius: 20px;
     height: 40px;
